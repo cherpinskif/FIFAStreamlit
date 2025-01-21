@@ -26,4 +26,4 @@ try:
     df_times_filtrado = st.dataframe(df_times_selecionado[columns],column_config={"Overall":st.column_config.ProgressColumn("Overall",format="%d"),"Photo":st.column_config.ImageColumn(),"Wage(£)":st.column_config.ProgressColumn("Weekly Wage",format="£%f",min_value=0,max_value=df_times_selecionado["Wage(£)"].max()),"Flag":st.column_config.ImageColumn()})
 except:
     columns = ["Age","Photo","Flag","Overall","Value(£)","Wage(£)","Joined","Height(cm.)","Weight(lbs.)","Contract Valid Until"]
-    df_times_filtrado = st.dataframe(df_times_selecionado[columns],column_config={"Overall":st.column_config.ProgressColumn("Overall",format="%d"),"Photo":st.column_config.ImageColumn(),"Wage(£)":st.column_config.ProgressColumn("Weekly Wage",format="£%f",min_value=0,max_value=df_times_selecionado["Wage(£)"].max())})
+    df_times_filtrado = st.dataframe(df_times_selecionado[columns],column_config={"Overall":st.column_config.ProgressColumn("Overall",format="%d"),"Photo":st.column_config.ImageColumn(),"Wage(£)":st.column_config.ProgressColumn("Weekly Wage",format="£%f",min_value=0,max_value=df_times_selecionado["Wage(£)"].max()),"Flag":st.column_config.ImageColumn()})
