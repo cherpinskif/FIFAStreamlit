@@ -9,7 +9,7 @@ df_data = st.session_state['data']
 
 year = ['17','18','19','20','21','22','23']
 select_year = st.sidebar.selectbox("Selecione o ano que você deseja?",year)
-df_times = pd.read_csv(r'datasets/CLEAN_FIFA'+"23"+'_official_data.csv',index_col=0)
+df_times = pd.read_csv(r'datasets/CLEAN_FIFA'+select_year+'_official_data.csv',index_col=0)
 
 select_times = st.sidebar.selectbox("Selecione o time", df_times['Club'].unique())
 
